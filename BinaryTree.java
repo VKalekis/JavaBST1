@@ -13,6 +13,7 @@ public class BinaryTree {
         BinaryTree newBST = new BinaryTree();
         //newBST.choices();
         newBST.add(5);
+        newBST.add(3);
         newBST.add(2);
         newBST.add(1);
         newBST.printInOrder();
