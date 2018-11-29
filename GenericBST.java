@@ -7,6 +7,7 @@ public class GenericBST<T extends Comparable<T>> {
 
 
     public boolean add(T data){
+        System.out.println("BO");
         if (!check(data)){
             this.addNode(root,data);
             return true;
@@ -142,6 +143,7 @@ public class GenericBST<T extends Comparable<T>> {
 
     class Node<T> {
         T key;
+        char colour;
         Node<T> left, right, parent;
 
         private Node(T data){
@@ -149,6 +151,7 @@ public class GenericBST<T extends Comparable<T>> {
             left=null;
             right=null;
             parent=null;
+            colour=' ';
         }
 
     }
